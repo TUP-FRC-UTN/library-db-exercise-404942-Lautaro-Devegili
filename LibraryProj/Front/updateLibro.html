@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actualizar Libro</title>
+    <link rel="stylesheet" href="estilos/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Actualizar Libro</h2>
+        <form id="formActualizarLibro" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="idLibro">ID del Libro:</label>
+                <select class="form-control" id="idLibro" name="idLibro" required>
+                </select>
+                <div class="invalid-feedback">Debe seleccionar un libro.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" class="form-control" id="isbn" name="isbn" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaPublicacion">Fecha de Publicación:</label>
+                <input type="date" class="form-control" id="fechaPublicacion" name="fechaPublicacion" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="idAutor">Autor:</label>
+                <select class="form-control" id="idAutor" name="idAutor" required>
+                </select>
+                <div class="invalid-feedback">Debe seleccionar un autor.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="idGenero">Género:</label>
+                <select class="form-control" id="idGenero" name="idGenero" required>
+                </select>
+                <div class="invalid-feedback">Debe seleccionar un género.</div>
+            </div>
+
+            <input type="hidden" id="accion" name="accion" value="">
+
+            <button type="submit" class="btn btn-primary" id="btnSubmit">Guardar</button>
+            <button type="button" class="btn btn-danger ml-2" id="btnDelete">Borrar Libro</button>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function() {
+            cargarLibros();
+            cargarAutores();
+            cargarGeneros();
+
+            $("#idLibro").change(function() {
+                var libroId = $(this).val();
+                var libroski;
+                if (libroId) {
+                    $.get(`https://localhost:7290/api/Libro/GetLibroById/${libroId}`, function(libro) {
+                        $("#titulo").val(libro.titulo);
+                        $("#isbn").val(libro.isbn);
+                        $("#fechaPublicacion").val(formatoFecha(libro.fechaPublicacion));
+                        $("#idAutor").val(parseInt(libro.idAutor));
+                        $("#idGenero").val(parseInt(libro.idGenero));
+                        libroski = libro;
+                    });
+                    
+                }
+            });
+
+            $("#btnDelete").click(function() {
+                $("#accion").val("delete");
+                $("#formActualizarLibro").submit();
+            });
+
+            $("#formActualizarLibro").submit(function(e) {
+                e.preventDefault();
+                if ($("#formActualizarLibro")[0].checkValidity()) {
+                    if ($("#accion").val() === "delete") {
+                        var idLibro = $("#idLibro").val();
+                        $.ajax({
+                            url: `https://localhost:7290/api/Libro/DeleteLibro/${idLibro}`,
+                            type: 'DELETE',
+                            success: function(response) {
+                                alert(response);
+                                $("#formActualizarLibro")[0].reset();
+                                cargarLibros();
+                                $("#formActualizarLibro").addClass('was-validated');
+                                $("#formActualizarLibro").removeClass('was-validated');
+                                $("#accion").val("");
+                            },
+                            error: function(jqXHR, textStatus, errorThrown) {
+                                var errorMessage = jqXHR.responseJSON ? jqXHR.responseJSON.message : errorThrown;
+                                alert("Error al borrar el libro: " + errorMessage);
+                            }
+                        });
+                    } else {
+                        var libro = {
+                            id: $("#idLibro").val(),
+                            titulo: $("#titulo").val(),
+                            isbn: $("#isbn").val(),
+                            fechaPublicacion: $("#fechaPublicacion").val(),
+                            idAutor: $("#idAutor").val(),
+                            idGenero: $("#idGenero").val(),
+                            NombreAutor: $("#idAutor").text(),
+                            NombreGenero: $("#idGenero").text()
+                        };
+
+                        $.ajax({
+                            url: `https://localhost:7290/api/Libro/UpdateLibro`,
+                            type: 'PUT',
+                            contentType: 'application/json',
+                            data: JSON.stringify(libro),
+                            success: function(response) {
+                                alert(response);
+                            },
+                            error: function() {
+                                alert("Error al actualizar el libro.");
+                            }
+                        });
+                    }
+                }
+                $("#formActualizarLibro").addClass('was-validated');
+            });
+
+            
+
+            function cargarLibros() {
+                
+                $.get("https://localhost:7290/api/Libro/GetAllLibroIds", function(data) {
+                    var options = "";
+                    data.forEach(function(libroId) {
+                        options += `<option value="${libroId}">${libroId}</option>`;
+                    });
+                    $("#idLibro").html(options);
+
+                    var primerLibroId = $("#idLibro").val();
+                    if (primerLibroId) {
+                        $.get(`https://localhost:7290/api/Libro/GetLibroById/${primerLibroId}`, function(libro) {
+                            $("#titulo").val(libro.titulo);
+                            $("#isbn").val(libro.isbn);
+                            $("#fechaPublicacion").val(formatoFecha(libro.fechaPublicacion));
+                            $("#idAutor").val(libro.idAutor);
+                            $("#idGenero").val(libro.idGenero);
+                        });
+                    }
+                });
+            }
+
+            function cargarAutores() {
+                $.get("https://localhost:7290/api/Libro/GetAutores", function(data) {
+                    var options = "";
+                    data.forEach(function(autor) {
+                        options += `<option value="${autor.id}">${autor.nombre}</option>`;
+                    });
+                    $("#idAutor").html(options);
+                });
+            }
+
+            function cargarGeneros() {
+                $.get("https://localhost:7290/api/Libro/GetGeneros", function(data) {
+                    var options = "";
+                    data.forEach(function(genero) {
+                        options += `<option value="${genero.id}">${genero.nombre}</option>`;
+                    });
+                    $("#idGenero").html(options);
+                });
+            }
+
+            function formatoFecha(fecha) {
+                
+                if (!(fecha instanceof Date)) {
+                    fecha = new Date(fecha);
+                }
+                
+                var anio = fecha.getFullYear();
+                var mes = (fecha.getMonth() + 1).toString().padStart(2, '0');
+                var dia = fecha.getDate().toString().padStart(2, '0');
+
+                return `${anio}-${mes}-${dia}`;
+            }
+        });
+
+    </script>
+</body>
+</html>

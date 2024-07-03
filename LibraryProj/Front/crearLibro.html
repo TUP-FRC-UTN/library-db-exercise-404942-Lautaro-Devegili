@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Nuevo Libro</title>
+    <link rel="stylesheet" href="estilos/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Crear Nuevo Libro</h2>
+        <form id="formCrearLibro" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="titulo">Título:</label>
+                <input type="text" class="form-control" id="titulo" name="titulo" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" class="form-control" id="isbn" name="isbn" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaPublicacion">Fecha de Publicación:</label>
+                <input type="date" class="form-control" id="fechaPublicacion" name="fechaPublicacion" required>
+                <div class="invalid-feedback">Este campo es requerido.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="idAutor">Autor:</label>
+                <select class="form-control" id="idAutor" name="idAutor" required>
+                </select>
+                <div class="invalid-feedback">Debe seleccionar un autor.</div>
+            </div>
+
+            <div class="form-group">
+                <label for="idGenero">Género:</label>
+                <select class="form-control" id="idGenero" name="idGenero" required>
+                </select>
+                <div class="invalid-feedback">Debe seleccionar un género.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Crear Libro</button>
+        </form>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function() {
+            cargarAutores();
+            cargarGeneros();
+
+            $("#formCrearLibro").submit(function(e) {
+                e.preventDefault();
+                if ($("#formCrearLibro")[0].checkValidity()) {
+                    var libro = {
+                        Titulo: $("#titulo").val(),
+                        ISBN: $("#isbn").val(),
+                        //ISBN: parseInt($("#isbn").val()),
+                        FechaPublicacion: $("#fechaPublicacion").val(),
+                        //IdAutor: parseInt($("#idAutor").val()),
+                        IdAutor: $("#idAutor").val(),
+                        //IdGenero: parseInt($("#idGenero").val())
+                        IdGenero: $("#idGenero").val()
+                    };
+                    /*console.log(`titulo: ${libro.Titulo}, typeof: ${typeof(libro.Titulo)}.
+                    \nisbn: ${libro.ISBN}, typeof: ${typeof(libro.ISBN)}.
+                    \nFechaPublicacion: ${libro.FechaPublicacion}, typeof: ${typeof(libro.FechaPublicacion)}.
+                    \nidAutor: ${libro.IdAutor}, typeof: ${typeof(libro.IdAutor)}.
+                    \nidGenero: ${libro.IdGenero}, typeof: ${typeof(libro.IdGenero)}.`)
+                    Acá estuve depurando porque me daba error, era que había usado el $.post en vez de el .ajax ..........
+                    */
+
+                    $.ajax({
+                        url: `https://localhost:7290/api/Libro/CreateLibro`,
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify(libro),
+                        success: function(response) {
+                            alert(response);
+                            $("#formCrearLibro")[0].reset();
+                            $("#idAutor").val('1');
+                            $("#idGenero").val('1');
+                        },
+                        error: function() {
+                            alert("Error al crear el libro.");
+                        }
+                    });
+                }
+                $("#formCrearLibro").addClass('was-validated');
+            });
+
+            function cargarAutores() {
+                $.get("https://localhost:7290/api/Libro/GetAutores", function(data) {
+                    var options = "";
+                    data.forEach(function(autor) {
+                        options += `<option value="${autor.id}">${autor.nombre}</option>`;
+                    });
+                    $("#idAutor").html(options);
+                });
+            }
+
+            function cargarGeneros() {
+                $.get("https://localhost:7290/api/Libro/GetGeneros", function(data) {
+                    var options = "";
+                    data.forEach(function(genero) {
+                        options += `<option value="${genero.id}">${genero.nombre}</option>`;
+                    });
+                    $("#idGenero").html(options);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

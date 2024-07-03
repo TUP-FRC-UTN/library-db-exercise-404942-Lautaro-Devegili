@@ -1,0 +1,310 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:controllers\\librocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\services\\impl\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:services\\impl\\libroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\services\\ilibroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:services\\ilibroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\dtos\\deletelibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\deletelibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\dtos\\updatelibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\updatelibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:models\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\dtos\\getlibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\getlibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\dtos\\getautordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\getautordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|d:\\escritoriovr0\\lauti\\universidad\\progiii\\visual studio\\library-db-exercise-404942-lautaro-devegili\\libraryproj\\dtos\\createlibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\createlibrodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|d:\\escritoriovr0\\lauti\\universidad\\progiii\\visual studio\\library-db-exercise-404942-lautaro-devegili\\libraryproj\\context\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:context\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|d:\\escritoriovr0\\lauti\\universidad\\progiii\\visual studio\\library-db-exercise-404942-lautaro-devegili\\libraryproj\\front\\verlibros.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:front\\verlibros.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|d:\\escritoriovr0\\lauti\\universidad\\progiii\\visual studio\\library-db-exercise-404942-lautaro-devegili\\libraryproj\\front\\crearlibro.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:front\\crearlibro.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\dtos\\getgenerodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:dtos\\getgenerodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:models\\genero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{029E80F6-E0A9-4127-A58B-C5B5D4DC0DEB}|LibraryProj.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "verLibros.html",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Front\\verLibros.html",
+              "RelativeDocumentMoniker": "Front\\verLibros.html",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Front\\verLibros.html",
+              "RelativeToolTip": "Front\\verLibros.html",
+              "ViewState": "AQIAABwAAAAAAAAAAAAcwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-03T21:09:22.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "libraryDbContext.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Context\\libraryDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\libraryDbContext.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Context\\libraryDbContext.cs",
+              "RelativeToolTip": "Context\\libraryDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:08:27.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibroService.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Services\\Impl\\LibroService.cs",
+              "RelativeDocumentMoniker": "Services\\Impl\\LibroService.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Services\\Impl\\LibroService.cs",
+              "RelativeToolTip": "Services\\Impl\\LibroService.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAnwDwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:43:28.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibroController.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Controllers\\LibroController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibroController.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Controllers\\LibroController.cs",
+              "RelativeToolTip": "Controllers\\LibroController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswCgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T17:55:33.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateLibroDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\CreateLibroDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateLibroDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\CreateLibroDTO.cs",
+              "RelativeToolTip": "DTOs\\CreateLibroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:51:19.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetAutorDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetAutorDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\GetAutorDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetAutorDTO.cs",
+              "RelativeToolTip": "DTOs\\GetAutorDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T19:24:05.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetLibroDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetLibroDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\GetLibroDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetLibroDTO.cs",
+              "RelativeToolTip": "DTOs\\GetLibroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:41:23.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:01:23.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILibroService.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Services\\ILibroService.cs",
+              "RelativeDocumentMoniker": "Services\\ILibroService.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Services\\ILibroService.cs",
+              "RelativeToolTip": "Services\\ILibroService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:43:40.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Libro.cs",
+              "RelativeDocumentMoniker": "Models\\Libro.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Libro.cs",
+              "RelativeToolTip": "Models\\Libro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:42:14.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateLibroDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\UpdateLibroDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateLibroDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\UpdateLibroDTO.cs",
+              "RelativeToolTip": "DTOs\\UpdateLibroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:46:29.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "crearLibro.html",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Front\\crearLibro.html",
+              "RelativeDocumentMoniker": "Front\\crearLibro.html",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Front\\crearLibro.html",
+              "RelativeToolTip": "Front\\crearLibro.html",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAcwGQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-07-03T21:08:58.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Genero.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Genero.cs",
+              "RelativeDocumentMoniker": "Models\\Genero.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Genero.cs",
+              "RelativeToolTip": "Models\\Genero.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:13:09.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-03T17:58:18.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetGeneroDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetGeneroDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\GetGeneroDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\GetGeneroDTO.cs",
+              "RelativeToolTip": "DTOs\\GetGeneroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T19:24:33.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Autor.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Autor.cs",
+              "RelativeDocumentMoniker": "Models\\Autor.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\Models\\Autor.cs",
+              "RelativeToolTip": "Models\\Autor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:10:35.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeleteLibroDTO.cs",
+              "DocumentMoniker": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\DeleteLibroDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\DeleteLibroDTO.cs",
+              "ToolTip": "D:\\Escritoriovr0\\Lauti\\Universidad\\ProgIII\\Visual Studio\\library-db-exercise-404942-Lautaro-Devegili\\LibraryProj\\DTOs\\DeleteLibroDTO.cs",
+              "RelativeToolTip": "DTOs\\DeleteLibroDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:38:57.572Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

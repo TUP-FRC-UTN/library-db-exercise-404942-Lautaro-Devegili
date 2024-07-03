@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Libros</title>
+    <link rel="stylesheet" href="estilos/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="my-4">Lista de Libros</h2>
+        <table id="tablaLibros" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>ISBN</th>
+                    <th>Fecha de Publicación</th>
+                    <th>Autor</th>
+                    <th>Género</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function() {
+            cargarLibros();
+
+            function cargarLibros() {
+                $.get("https://localhost:7290/api/Libro/GetLibros", function(data) {
+                    $("#tablaLibros tbody").empty();
+
+                    data.forEach(function(libro) {
+                        $("#tablaLibros tbody").append(`
+                            <tr>
+                                <td>${libro.titulo}</td>
+                                <td>${libro.isbn}</td>
+                                <td>${libro.fechaPublicacion}</td>
+                                <td>${libro.autor}</td>
+                                <td>${libro.genero}</td>
+                            </tr>
+                        `);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
